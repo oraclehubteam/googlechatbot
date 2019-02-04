@@ -16,9 +16,8 @@ module.exports = (app) => {
   // add webhook integration to Oracle Cloud
   const webhook = new WebhookClient({
     channel: {
-    channel: {
-      url: 'ORACLE_CHANNEL_URL',
-      secret: 'ORACLE_CHANNEL_SECRET'
+      url: 'BOT_WEBHOOK_URL',
+      secret: 'BOT_WEBHOOK_SECRET',
     }
   });
   // Add webhook event handlers (optional)
