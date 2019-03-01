@@ -1,13 +1,13 @@
+const express = require('express');
 const service = require('./service');
+const pkg = require('./package.json');
+const logger = console;
+const app = express();
 
-const config = {
-   logger: null,
-        basicAuth: null
-};
+service(app);
 
-// Create an express app instance
-var express_app = service.init(config);
-
-const server = express_app.listen(process.env.PORT || 3000)
+const server = app.listen(process.env.PORT || 3000, () => {
+ logger.info(`${pkg.name} service online\n`);
+});
 
 module.exports = server;
