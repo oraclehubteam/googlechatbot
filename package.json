@@ -1,13 +1,34 @@
 {
-    "name": "oracle-bot-webhook",
-    "version": "1.0.0",
-    "description": "Getting started app with Oracle Bot Webhook channel",
-    "main": "service.js",
-    "author": "",
-    "license": "",
-    "dependencies": {
-      "@oracle/bots-node-sdk": "^2.0.0",
-      "actions-on-google": "^2.4.1",
-      "express": "^4.16.4"
-    }
-  }
+  "name": "oracle-bot-webhook",
+  "version": "1.0.0",
+  "description": "Getting started app with Oracle Bot Webhook channel",
+  "main": "service.js",
+  "author": "@gustavogaspar",
+  "license": "MIT",
+  "dependencies": {
+    "@oracle/bots-node-sdk": "^2.1.3",
+    "actions-on-google": "^2.6.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavogaspar/googlehome.git"
+  },
+  "keywords": [
+    "node",
+    "webhook",
+    "googlehome",
+    "oracle",
+    "digital",
+    "assistant"
+  ],
+  "bugs": {
+    "url": "https://github.com/gustavogaspar/googlehome/issues"
+  },
+  "homepage": "https://github.com/gustavogaspar/googlehome#readme"
+}
