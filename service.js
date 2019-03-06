@@ -44,6 +44,6 @@ module.exports = (app) => {
   
   app.post('/bot/message', webhook.receiver());
 
-  app.use('/bot/action',bodyParser.json(),assistant);
-  app.post('/bot/action', assistant );
+  app.use('/fulfillment',bodyParser.json(),assistant);
+  app.post('/fulfillment', assistant );
 }
